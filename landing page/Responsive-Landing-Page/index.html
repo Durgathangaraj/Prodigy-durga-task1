@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600;700&family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Responsive Landing Page </title>
+</head>
+<body>
+    <header>
+        <section >
+       
+        
+        
+    </section>
+        
+        <section class="menu">
+            <ul class="menu-list">
+                <li>Home</li>
+                <li class="active">Products</li>
+                <li>About Us</li>
+                <li>Contact</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>    
+
+    <section class="main">
+
+            <section class="left">
+                <p class="title">Durga </p>
+                <p class="msg">Welcome to our coding solutions landing page! Empowering developers with efficient tools and expert guidance, we're dedicated to simplifying complex coding challenges. Our platform offers tailored solutions to streamline your development process, whether you're debugging, optimizing, or building from scratch. Explore our array of resources, from robust libraries to intuitive IDE integrations, designed to enhance productivity and accelerate project delivery. Revolutionize your coding experience with our innovative solutions. Let's transform ideas into reality, one line of code at a time</p>
+               
+                <button class="cta">Start Building</button>
+                <button class="cta">Explore Courses</button>
+            </section>
+
+            <section class="right">
+                <img src="img.svg" alt="Landing Image">
+            </section>
+
+    </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('opened')
+        })
+
+    </script>
+
+</body>
+</html>
